@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    background: url("ảnh-nền-đn.png");
+    background-size: cover;
+  }
+  a {
+    text-decoration: none;
+  }
+  #container {
+    width: 360px;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -180px;
+    margin-top: -280px;
+    padding: 32px;
+    border-radius: 8px;
+    background: #e9dbf3e8;
+  }
+  #container .form-title {
+    font-size: 28px;
+    margin: 12px 0;
+    color: #76547c;
+  }
+  #container #sign-in .input {
+    padding: 10px;
+    width: 100%;
+    margin: 12px 0;
+    border-radius: 5px;
+    border: none;
+    box-shadow: #c0c1bd 0px 0px 12px 0px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.8rem;
+  }
+  
+  #container .button-sign-in {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    background: #bd59d7;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    margin-bottom: 20px;
+  }
+  #container .button-sign-in:hover {
+    background-color: #2ee59d;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  }
+  #container .title-other-sign-in {
+    margin-top: 20px;
+    color: #544747;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #container .icon-sign-in {
+    margin-top: 20px;
+  }
+  #container .icon-sign-in .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: #c0c1bd 0px 0px 12px 0px;
+    margin: 0 4px;
+    display: inline-block;
+  }
+  #container .icon-sign-in .icon i {
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    font-size: 20px;
+  }
+  
+  #container .icon-sign-in .icon-fb {
+    color: #055393;
+  }
+  
+  #container .icon-sign-in .icon-gg {
+    color: #055393;
+  }
+  
+  #container .icon-sign-in .icon i:hover {
+    color: #bd59d7;
+  }
+  
+  #container > a {
+    text-decoration: none;
+  }
+  
+  .forgot-pass {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .forgot::after {
+    content: "";
+    display: block;
+    width: 0;
+    background-color: #bd59d7;
+    height: 2px;
+    transition: all 0.5s;
+  }
+  .forgot:hover::after {
+    width: 125px;
+  }
+  .forgot {
+    color: #bd59d7;
+    font-weight: 600;
+  }
+  
+  .signUp {
+    color: #bd59d7;
+    font-weight: 600;
+  }
+  .signUp::after {
+    content: "";
+    display: block;
+    width: 0;
+    background-color: #bd59d7;
+    height: 2px;
+    transition: all 0.5s;
+  }
+  .signUp:hover::after{
+      width: 100%;
+  }
+  

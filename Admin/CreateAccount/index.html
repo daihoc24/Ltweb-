@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo tài khoản</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="container">
+        <h3 class="form-title">Đăng nhập</h3>
+        <form id="sign-in">
+            <input name="user" type="text" placeholder="Họ và tên" class="input input-account">
+            <input name="pass" type="password" placeholder="Nhập mật khẩu" class="input input-password">
+            <input name="re-pass" type="re-password" placeholder="Nhập lại mật khẩu" class="input input-re-pass">
+            <div class="gender form-check">
+                <label class="genderChoose">Gender</label>
+                <div class="genderList">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Nam</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Nữ</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio3">Giới tính khác</label>
+                    </div>
+                </div>
+
+            </div>
+            <input name="mail" type="email" placeholder="Email" class="input input-email">
+            <input name="verify" type="number" placeholder="Nhập mã xác thực" class="input input-verify">
+            <input name="phone-number" type="number" placeholder="Số điện thoại" class="input input-phoneNo">
+            <div class="gender">
+
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Tôi đồng ý với mọi điều khoản</label>
+            </div>
+        </form>
+        <button type="button" class="button-sign-in">Đăng kí</button>
+        <div style="display: flex">
+            <p class="haveAccount">Bạn đã có tài khoản? </p><a class="login" href="../LogIn/index.html">Đăng nhập
+                ngay</a>
+    </div>
+        
+    </div>
+</body>
+
+</html>
