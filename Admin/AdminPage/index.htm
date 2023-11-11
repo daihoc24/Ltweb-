@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600&display=swap"
@@ -14,33 +12,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header-content">
-                <a href="#">
-                    <img src="../img/logo-2.png" class="logo" alt="">
+                <a class="logo">
+                    <img src="./img/logo-white.png" class="logo" alt="">
                 </a>
                 <nav>
-                    <ul>
+                    <ul class="menu">
                         <li>
-                            <a href="#">
+                            <a href="../../User/index.html">
                                 <span>Trang chủ</span>
-
+                                <i class="fa fa-chevron-down"></i>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span>Trang quản trị</span>
-
+                                <span>Sản phẩm</span>
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Dịch vụ</span>
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Bài viết</span>
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Blog</span>
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Liên hệ</span>
+                                <i class="fa fa-chevron-down"></i>
                             </a>
                         </li>
                     </ul>
-                    <button><a href="../LogIn/index.html">Đăng nhập</a></button>
+                    <div class="dropdown show">
+                        <a class="user" href="">
+                            <i class="fa-solid fa-user" href="#" style="color: #ffffff;"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../Login/index.html">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="../CreateAccount/index.html">Đăng kí</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="cart">
+                        <i class="fa-solid fa-cart-shopping shopping"></i>
+                        <span id="quality" class="quality">1</span>
+                    </div> -->
                 </nav>
             </div>
         </div>
@@ -67,7 +101,7 @@
                         Thêm sản phẩm
                     </button>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 search">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" id="txtSearch" placeholder="Nhập từ khóa" />
                         <div class="input-group-append">
@@ -79,25 +113,26 @@
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
-                        <th scope="col">STT</th>
-                        <th scope="col">Tên sản phẩm</th>
-                        <th scope="col">Giá</th>
-                        <th scope="col">Hình ảnh</th>
-                        <th scope="col">Mô tả</th>
-                        <th scope="col">Loại</th>
-                        <th scope="col">Action</th>
+                        <th style="width: 50px;">STT</th>
+                        <th style="width: 150px;">Tên sản phẩm</th>
+                        <th>Giá</th>
+                        <th style="width: 100px;">Hình ảnh</th>
+                        <th style="width: 100px;">Số lượng</th>
+                        <th>Mô tả</th>
+                        <th style="width: 100px;">Loại</th>
+                        <th style="width: 200px;">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td scope="row">1</th>
-                        <td>Son Mac</td>
-                        <td>40000$</td>
-                        <td class="img"><img src="../img/mac-powder-kiss-lipstick1-1670751450206.webp" width="50"></td>
-                        <td>Son Mac - là sự chọn lựa hàng đầu không chỉ ở Mỹ mà trên toàn
-                            cầu, đặc biệt là tại Việt Nam. Với chất son siêu lì, màu sắc chuẩn, bảng màu đa
-                            dạng, Son Mac nhanh chóng trở thành đối tác tin cậy của mọi phụ nữ yêu thời
-                            trang.</td>
+                        <td>Son Dưỡng Táo</td>
+                        <td>120.000đ</td>
+                        <td class="img"><img src="./img/son-duong-tao-co-mau_sp.jpg" width="50"></td>
+                        <td>100</td>
+                        <td class="desc">Son dưỡng Táo là dòng son dưỡng môi nhà Cỏ được nhiều chị em lựa chọn tin dùng
+                            giúp dưỡng cho đôi môi mềm mịn, ngăn ngừa nứt nẻ, có thể sử dụng làm son lót và trang điểm
+                            cho môi.</td>
                         <td>Son môi</td>
                         <td class="but-td">
                             <button type="button" class="btn btn-success">Sửa</button>
@@ -106,13 +141,14 @@
                     </tr>
                     <tr>
                         <td scope="row">2</th>
-                        <td>Kem dưỡng ẩm CLINIQUE</td>
-                        <td>90000$</td>
-                        <td class="img"><img
-                                src="../img/kem-duong-am-100-gio-clinique-moisture-surge-100h-61d3e49731ac3-04012022130927.jpg"
-                                width="50"></td>
-                        <td>Tuyệt</td>
-                        <td>Kem chăm sóc da mặt</td>
+                        <td>Son Kem Nhung</td>
+                        <td>160.000đ</td>
+                        <td class="img"><img src="./img/son-kem-nhung_sp.jpg" width="50" />
+                        <td>100</td>
+                        <td class="desc">Son Kem Nhung là dòng son với thành phần thiên nhiên an toàn là bí quyết trang
+                            điểm và che khuyết điểm cho môi, giúp dưỡng môi mềm mịn, ngăn ngừa nứt nẻ và không làm thâm
+                            môi.</td>
+                        <td>Son môi</td>
                         <td class="but-td">
                             <button type="button" class="btn btn-success">Sửa</button>
                             <button type="button" class="btn btn-danger">Xoá</button>
@@ -120,13 +156,221 @@
                     </tr>
                     <tr>
                         <td scope="row">3</th>
-                        <td>Kem chống lão hóa SK-II Power</td>
-                        <td>75000$</td>
-                        <td class="img"><img
-                                src="../img/sk-ii-skin-power-cream_b740d439c3d24c3d8d5b3990c1ab5617_1024x1024.png"
-                                width="50"></td>
-                        <td>Tuyệt</td>
-                        <td>Kem chăm sóc da mặt</td>
+                        <td>Son Dưỡng Môi Hồng</td>
+                        <td>120.000đ</td>
+                        <td class="img"><img src="./img/son-duong-moi-hong-co-mem_sp.png" width="50"></td>
+                        <td>97</td>
+                        <td class="desc">Son dưỡng Môi Hồng là một trong những dòng son dưỡng môi nhà Cỏ Mềm có công
+                            dụng giúp dưỡng ẩm, giảm thâm cho môi, dùng được cho cả đôi môi nhạy cảm.</td>
+                        <td>Son môi</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">4</th>
+                        <td>Son Nhiên - Dưỡng Mọng Tự Nhiên</td>
+                        <td>180.000đ</td>
+                        <td class="img"><img src="./img/son-nhien-duong-mong-tu-nhien-1_sp.jpg" width="50"></td>
+                        <td>120</td>
+                        <td class="desc">Son dưỡng Nhiên - dòng son dưỡng mới trong bộ sưu tập nhà Cỏ Mềm với công dụng
+                            vượt trội trong việc dưỡng ẩm, làm mềm môi, ngăn ngừa và cải thiện tình trạng môi thâm, nứt
+                            nẻ, nhăn môi, ngừa lão hóa cho môi.</td>
+                        <td>Son môi</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">5</th>
+                        <td>Son Dưỡng Gạo</td>
+                        <td>90.000đ</td>
+                        <td class="img"><img src="./img/son-gao-thuan-co-mem_sp.jpg" width="50"></td>
+                        <td>102</td>
+                        <td class="desc">Son Gạo Cỏ Mềm là dòng son dưỡng môi được nhiều chị em tin tưởng sử dụng trên
+                            thị trường hiện nay giúp dưỡng cho đôi môi mềm mịn, ngăn ngừa nứt nẻ, giảm thâm môi hiệu
+                            quả.</td>
+                        <td>Son môi</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">6</th>
+                        <td>Serum Sáng Da Mờ Nám Sơ-Ri Vitamin C</td>
+                        <td>465.000đ</td>
+                        <td class="img"><img src="./img/serum-sang-da-mo-nam-so-ri-vitamin-c-1_sp.jpg" width="50"></td>
+                        <td>80</td>
+                        <td class="desc">Serum sáng da mờ nám Sơ-ri vitamin C là dòng sản phẩm mới nhà Cỏ với chiết xuất
+                            từ quả Sơ-ri có công dụng hiệu quả trong việc cải thiện các tình trạng da trên, cho làn da
+                            căng mịn.</td>
+                        <td>Chăm sóc da</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">7</th>
+                        <td>Kem Dưỡng Sáng Da Mờ Nám Sơ-Ri Vi-C</td>
+                        <td>435.000đ</td>
+                        <td class="img"><img src="./img/kem-duong-sang-da-mo-nam-so-ri-vitamin-c-1_sp.jpg" width="50">
+                        </td>
+                        <td>150</td>
+                        <td class="desc">kem dưỡng sáng da mờ nám Sơ-ri Vitamin C giúp cấp ẩm cho da, làm sáng da, hỗ
+                            trợ làm mờ nếp nhăn, đốm nâu, vết nám trên da, đem lại làn da căng mịn.</td>
+                        <td>Chăm sóc da</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">8</th>
+                        <td>Serum Cấp Ẩm Phục Hồi Tơ Tằm</td>
+                        <td>245.000đ</td>
+                        <td class="img"><img src="./img/serum-ha-to-tam-phuc-hoi-da_sp.png" width="50"></td>
+                        <td>100</td>
+                        <td class="desc">Serum cấp ẩm phục hồi Tơ Tằm là sản phẩm serum cấp ẩm cho da, kích thích quá
+                            trình tái tạo tế bào da mới, cho làn da mềm mại, khỏe mạnh và còn góp phần ngăn ngừa các nếp
+                            nhăn trên da.</td>
+                        <td>Chăm sóc da</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">9</th>
+                        <td>Mặt Nạ Ngừa Mụn Rau Má</td>
+                        <td>145.000đ</td>
+                        <td class="img"><img src="./img/mat-na-ngua-mun-rau-ma-cho-da-dau_sp.jpg" width="50"></td>
+                        <td>120</td>
+                        <td class="desc">Mặt nạ ngừa mụn Rau Má là sản phẩm cần thiết trong chu trình chăm sóc da giúp
+                            cấp ẩm và dưỡng da, loại bỏ bã nhờn và tế bào chết trên da, làm thông thoáng lỗ chân lông,
+                            góp phần ngăn ngừa mụn trên da.</td>
+                        <td>Chăm sóc da</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">10</th>
+                        <td>Sữa Rửa Mặt Tạo Bọt Tơ Tằm</td>
+                        <td>95.000đ</td>
+                        <td class="img"><img src="./img/sua-rua-mat-tao-bot-to-tam_sp2x.jpg" width="50"></td>
+                        <td>89</td>
+                        <td class="desc">Sữa rửa mặt tạo bọt Tơ Tằm là sản phẩm giúp làm sạch da, duy trì độ ẩm tự nhiên
+                            trên da, giúp sạch thoáng lỗ chân lông, cho làn da trông sáng sạch và mịn màng hơn.</td>
+                        <td>Chăm sóc da</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">11</th>
+                        <td>Kem Dưỡng Ẩm Ngừa Lão Hóa Tơ Tằm</td>
+                        <td>315.000đ</td>
+                        <td class="img"><img src="./img/kem-duong-am-ngua-lao-hoa-to-tam_sp.jpg" width="50"></td>
+                        <td>125</td>
+                        <td class="desc">Kem dưỡng ẩm ngừa lão hóa Tơ Tằm giúp cấp ẩm và cung cấp dưỡng chất cho da,
+                            giúp giảm khô sần da, làm chậm quá trình lão hóa da, ngăn ngừa nếp nhăn, hỗ trợ phục hồi làn
+                            da và giúp duy trì làn da căng mịn.</td>
+                        <td>Chăm sóc da</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">12</th>
+                        <td>Kem Chống Nắng Hây Hây</td>
+                        <td>260.000đ</td>
+                        <td class="img"><img src="./img/kem-chong-nang-cho-da-dau-co-mem_sp.jpg" width="50"></td>
+                        <td>130</td>
+                        <td class="desc">Kem chống nắng Hây Hây là sản phẩm kem chống nắng của công ty cổ phần mỹ phẩm
+                            thiên nhiên Cỏ Mềm giúp bảo vệ da khỏi tác động xấu của các tia cực tím, đem đến cho bạn làn
+                            da mềm mại, khỏe mạnh hơn.</td>
+                        <td>Chăm sóc da</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">13</th>
+                        <td>Nước Tẩy Trang Rau Má</td>
+                        <td>120.000đ</td>
+                        <td class="img"><img src="./img/nuoc-tay-trang-rau-ma-cho-da-dau-mun_sp.jpg" width="50"></td>
+                        <td>100</td>
+                        <td class="desc">Nước Tẩy Trang Rau Má là sản phẩm giúp làm sạch da, loại bỏ đi lớp trang điểm,
+                            bụi bẩn, dầu thừa trên da, làm thông thoáng lỗ chân lông, giúp duy trì độ ẩm tự nhiên, cho
+                            làn da mềm mại, sáng sạch.</td>
+                        <td>Chăm sóc da</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">14</th>
+                        <td>Dầu Gội Thảo Dược Tóc Mây</td>
+                        <td>325.000đ</td>
+                        <td class="img"><img src="./img/dau-goi-toc-may-co-mem_sp.jpg" width="50"></td>
+                        <td>130</td>
+                        <td class="desc">Dầu gội thảo dược Tóc Mây giúp làm sạch tóc và da đầu, ngăn ngừa và cải thiện
+                            tình trạng tóc gàu, gãy rụng, chẻ ngọn.</td>
+                        <td>Dầu gội đầu</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">15</th>
+                        <td>Dầu Gội Sạch Gàu Cỏ Mềm</td>
+                        <td>225.000đ</td>
+                        <td class="img"><img src="./img/dau-goi-sach-gau-co-mem_sp.jpg" width="50"></td>
+                        <td>120</td>
+                        <td class="desc">Dầu gội sạch gàu Cỏ Mềm với chiết xuất từ cao quả bồ kết, lá neem, không chứa
+                            các chất tạo bọt gốc Sulfate, Paraben giúp làm sạch tóc và da dầu, ngăn ngừa tình trạng gàu,
+                            ngứa, đem đến mái tóc mềm mượt và chắc khỏe.</td>
+                        <td>Dầu gội đầu</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">16</th>
+                        <td>Kem Xả Ủ Tóc Mây</td>
+                        <td>245.000đ</td>
+                        <td class="img"><img src="./img/kem-xa-u-toc-may_sp.jpg" width="50"></td>
+                        <td>115</td>
+                        <td class="desc">Kem xả ủ Tóc Mây là bí quyết chăm sóc tóc, cung cấp dưỡng chất cho tóc và da
+                            đầu giúp dưỡng tóc mềm mượt, giảm tình trạng tóc gãy rụng, chẻ ngọn, góp phần bảo vệ tóc,
+                            thúc đẩy quá trình phục hồi tóc hư tổn, không gây bết tóc.</td>
+                        <td>Dầu gội đầu</td>
+                        <td class="but-td">
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">17</th>
+                        <td>Dầu Gội Thảo Dược Tóc Mây Travel Kit</td>
+                        <td>68.000đ</td>
+                        <td class="img"><img src="./img/dau-goi-toc-may-travel_sp.png" width="50"></td>
+                        <td>130</td>
+                        <td class="desc">Sản phẩm là minisize của Dầu gội thảo dược tóc Mây - Giảm rụng tóc sau 2 tuần,
+                            nhỏ gọn, tiện lợi phù hợp để mang theo đi chơi, đi du lịch.
+                        </td>
+                        <td>Dầu gội đầu</td>
                         <td class="but-td">
                             <button type="button" class="btn btn-success">Sửa</button>
                             <button type="button" class="btn btn-danger">Xoá</button>
@@ -145,7 +389,7 @@
                 <div class="footer-item wow animate__animated animate__fadeIn data-wow-duration=" 2s"
                     data-wow-delay="0.2s">
                     <a href="#">
-                        <img src="../img/logo-white.png" alt="">
+                        <img src="./img/logo-white.png" alt="">
                     </a>
                     <ul class="footer-contact">
                         <li>
@@ -285,15 +529,6 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
