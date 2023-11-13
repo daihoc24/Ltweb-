@@ -248,6 +248,12 @@ header {
   border: 1px solid #79832c;
   padding: 15px 20px;
   border-radius: 8px;
+  transition: all 0.3s;
+}
+.aboutUs-item:hover {
+  box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px,
+    rgba(71, 63, 79, 0.16) 0px 5px 10px;
+  transform: translateY(-10px);
 }
 .aboutUs-h3 {
   font-size: 20px;
@@ -288,6 +294,12 @@ header {
   max-width: 25%;
   padding-left: 15px;
   padding-right: 15px;
+  transition: all 0.3s;
+}
+.product-item:hover {
+  box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px,
+    rgba(71, 63, 79, 0.16) 0px 5px 10px;
+  transform: translateY(-10px);
 }
 .card {
   position: relative;
