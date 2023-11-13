@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a class="logo">
+                    <img src="./img/logo-white.png" class="logo" alt="">
+                </a>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="../../User/index.html">
+                                <span>Trang chủ</span>
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Sản phẩm</span>
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Dịch vụ</span>
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Bài viết</span>
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Blog</span>
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Liên hệ</span>
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dropdown show">
+                        <a class="user" href="">
+                            <i class="fa-solid fa-user" href="#" style="color: #ffffff;"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../Login/index.html">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="../CreateAccount/index.html">Đăng kí</a></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping shopping"></i>
+                        <span id="amount" class="amount"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="types">
+        <div class="container">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <ul class="nav navbar-nav types-content">
+                            <li><a class="type" href="#product-title1">Nổi bật</a></li>
+                            <li><a class="type" href="#product-title2">Bán chạy</a></li>
+                            <li><a class="type" href="#product-title3">Chăm sóc da</a></li>
+                            <li><a class="type" href="#product-title4">Son môi </a></li>
+                            <li><a class="type" href="#product-title5">Dầu gội đầu</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="detail">
+        <div class="container-detail">
+            <div class="detail-content">
+                <div class="detail-left">
+                    <img src="../img/son-duong-tao-co-mau_sp.jpg" alt="">
+                </div>
+                <div class="detail-right">
+                    <h3 class="detail-name">Son Dưỡng Táo</h3>
+                    <div class="product-rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="rate">Đánh giá từ những khách hàng đã mua</span>
+
+                    </div>
+                    <p class="detail-price">120.000đ</p>
+                    <div class="detail-quantity">
+                        <div class="quantity-change">
+                            <a href="#" class="minus" id="minus" onclick="handleMinus()">-</a>
+                            <input type="number" id="quantity" style="text-align: center;" name="quantity" min="1"
+                                value="1" max="1000">
+                            <a href="#" class="plus" id="plus" onclick="handlePlus()">+</a>
+                        </div>
+                        <button class="addProduct" id="addProduct" onclick="handleBuy()">Thêm giỏ hàng</button>
+                    </div>
+                    <div class="detail-priceShip">
+                        <div class="priceShip">
+                            <p>Phí ship</p>
+                            <ul class="list-priceShip">
+                                <li>Nội thành Hà Nội -20.000đ</li>
+                                <li>Các tỉnh còn lại -25.000đ</li>
+                            </ul>
+                        </div>
+                        <div class="priceShip">
+                            <p>Thời gian ship dự kiến</p>
+                            <ul class="list-priceShip">
+                                <li>Hà Nội, TP.HCM: 1-2 ngày</li>
+                                <li>Các tỉnh còn lại -25.000đ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="detail-name">THÔNG TIN SẢN PHẨM</h3>
+                    <p class="detail-desc">Son dưỡng Táo là dòng son dưỡng môi nhà Cỏ được nhiều chị em lựa
+                        chọn tin dùng giúp dưỡng cho đôi môi mềm mịn, ngăn ngừa nứt nẻ, có thể sử dụng làm son
+                        lót và trang điểm cho môi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product">
+        <div class="container">
+            <div class="product-title1" id="product-title5">
+                <h2>SẢN PHẨM LIÊN QUAN</h2>
+            </div>
+            <div class="product-content row">
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a href="./Detail/index.html">
+                            <img src="./img/son-duong-moi-hong-co-mem_sp.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Son Dưỡng Môi Hồng</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">120.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a href="./Detail/index.html">
+                            <img src="./img/son-nhien-duong-mong-tu-nhien-1_sp.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Son Nhiên - Dưỡng Mọng Tự Nhiên</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">180.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a href="./Detail/index.html">
+                            <img src="./img/son-gao-thuan-co-mem_sp.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Son Dưỡng Gạo</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">90.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a href="./Detail/index.html">
+                            <img src="./img/son-kem-nhung_sp.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Son Kem Nhung</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">160.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-title1" id="product-title5">
+                <h2>SẢN PHẨM KHÁC</h2>
+            </div>
+            <div class="product-content product-list row">
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/serum-ha-to-tam-phuc-hoi-da_sp.png" draggable="false" class="card-img-top"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Serum Cấp Ẩm Phục Hồi Tơ Tằm</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">245.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/dau-goi-toc-may-co-mem_sp.jpg" draggable="false" class="card-img-top"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Dầu Gội Thảo Dược Tóc Mây</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">325.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/mat-na-ngua-mun-rau-ma-cho-da-dau_sp.jpg" draggable="false"
+                                class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Mặt Nạ Ngừa Mụn Rau Má</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">145.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/sua-rua-mat-tao-bot-to-tam_sp2x.jpg" draggable="false" class="card-img-top"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Sữa Rửa Mặt Tạo Bọt Tơ Tằm</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">95.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/kem-duong-am-ngua-lao-hoa-to-tam_sp.jpg" draggable="false"
+                                class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Kem Dưỡng Ẩm Ngừa Lão Hóa Tơ Tằm</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">315.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/kem-chong-nang-cho-da-dau-co-mem_sp.jpg" draggable="false"
+                                class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Kem Chống Nắng Hây Hây</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">260.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/nuoc-tay-trang-rau-ma-cho-da-dau-mun_sp.jpg" draggable="false"
+                                class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Nước Tẩy Trang Rau Má</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">120.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/dau-goi-sach-gau-co-mem_sp.jpg" draggable="false" class="card-img-top"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Dầu Gội Sạch Gàu Cỏ Mềm</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">225.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/kem-xa-u-toc-may_sp.jpg" draggable="false" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Kem Xả Ủ Tóc Mây</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">245.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/dau-goi-toc-may-travel_sp.png" draggable="false" class="card-img-top"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Dầu Gội Thảo Dược Tóc Mây Travel Kit</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">68.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/serum-sang-da-mo-nam-so-ri-vitamin-c-1_sp.jpg" draggable="false"
+                                class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Serum Sáng Da Mờ Nám Sơ-Ri Vitamin C</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">465.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/kem-duong-sang-da-mo-nam-so-ri-vitamin-c-1_sp.jpg" draggable="false"
+                                class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Kem Dưỡng Sáng Da Mờ Nám Sơ-Ri Vi-C</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">435.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-item">
+                    <div class="card card_product">
+                        <a>
+                            <img src="./img/son-kem-nhung_sp.jpg" draggable="false" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="product-head">
+                                <div>
+                                    <h3 class="product-name">Son Kem Nhung</h3>
+                                </div>
+                                <div>
+                                    <h3 class="product-price">160.000đ</h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="product-rate">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bot">
+                <div class="footer-item wow animate__animated animate__fadeIn data-wow-duration=" 2s"
+                    data-wow-delay="0.2s">
+                    <a href="#">
+                        <img src="./img/logo-white.png" alt="">
+                    </a>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span>
+                                1800-123-4567
+                                <br>
+                                +91 987-654-3210
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <span>
+                                info@example.com
+                                <br>
+                                services@gmail.com
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>
+                                A123-Phường Linh Xuân-Thủ Đức
+                                <br>
+                                Thành phố Hồ Chí Minh
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item wow animate__animated animate__fadeIn" data-wow-duration="2s"
+                    data-wow-delay="0.2s">
+                    <h3>Những liên kết khác</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Trang chủ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Về chúng tôi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Dịch vụ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Đội ngũ quản lí</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item wow animate__animated animate__fadeIn" data-wow-duration="2s"
+                    data-wow-delay="0.2s">
+                    <h3>Liên kết của chúng tôi</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Chiến lược nghiên cứu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Phát triển Web</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Giải pháp</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Thương mại điện tử</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Thiết kế App</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item wow animate__animated animate__fadeIn" data-wow-duration="2s"
+                    data-wow-delay="0.2s">
+                    <h3>Dịch vụ của chúng tôi</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Hỏi đáp</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Danh mục đầu tư</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Chính sách bảo mật</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Điều khoản dịch vụ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-right"></i>
+                                <span>Hỗ trợ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
