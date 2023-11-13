@@ -131,6 +131,7 @@ header {
   color: #fff;
   font-size: 16px !important;
   margin-left: 10px;
+  cursor: pointer;
 }
 .amount {
   background-color: #fff;
@@ -145,6 +146,79 @@ header {
   top: 23px;
   left: 76.4%;
   padding: 0px 5px;
+}
+.cartModal {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 700px;
+  height: 800px;
+  z-index: 1000;
+  transition: all 0.3s;
+  background-color: #fff;
+  border-radius: 5px;
+}
+body.active .banner .cartModal {
+  right: 0;
+}
+.checkout {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-left: 10px;
+}
+.checkout .money {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.btn-outline-primary {
+  border: 1px solid #28a745;
+  border-radius: 4px;
+  color: #28a745;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: transparent;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #28a745;
+}
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 900px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+}
+.theadCart {
+  text-align: left;
+}
+.cartImg img {
+  margin-left: 10px;
+}
+.cartModal h2 {
+  font-size: 2rem;
+  color: #d35400;
+  font-weight: 400;
+  text-align: center;
+}
+.tableCart {
+  width: 100%;
+}
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 900px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+}
+body.active .detail .cartModal{
+  right: 0;
 }
 .navbar-inverse {
   padding: 10px;
