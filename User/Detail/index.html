@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <div class="cover" id="cover" style="display: none;"></div>
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -73,7 +74,7 @@
                     </div>
                     <div class="cart">
                         <i class="fa-solid fa-cart-shopping shopping"></i>
-                        <span id="amount" class="amount"></span>
+                        <span id="amount" class="amount">0</span>
                     </div>
                 </nav>
             </div>
@@ -98,6 +99,40 @@
     </section>
     <section class="detail">
         <div class="container-detail">
+            <div class="cartModal">
+                <h2>Cart</h2>
+                <table class="tableCart">
+                    <thead class="theadCart">
+                        <tr>
+                            <th style="padding: 15px 25px;">Ảnh</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                            <th>Tổng giá</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listCart" class="listCart">
+                        <tr>
+                            <td class="cartImg"><img src="./img/son-duong-tao-co-mau_sp.jpg" width="80px" alt=""></td>
+                            <td>Son Dưỡng Táo</td>
+                            <td id="amountProduct">0</td>
+                            <td id="priceProduct">120.000đ</td>
+                            <td id="totalPrice">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="checkout">
+                    <div class="money">
+                        Total:
+                        <span id="total"></span>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary purchase" data-toggle="modal"
+                        data-target="#exampleModal">Thanh toán</button>
+                    <button type="button" class="btn btn-outline-primary clear">Xóa</button>
+                    <button type="button" class="btn btn-outline-primary off">Đóng</button>
+
+                </div>
+            </div>
             <div class="detail-content">
                 <div class="detail-left">
                     <img src="../img/son-duong-tao-co-mau_sp.jpg" alt="">
