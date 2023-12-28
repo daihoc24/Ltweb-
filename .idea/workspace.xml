@@ -2,39 +2,23 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Webpj:war" />
+      <artifact name="LtWeb:war" />
+      <artifact name="LtWeb:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="6f26dba4-4417-401b-a6c0-9375492b1f29" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.png" beforeDir="false" />
-    </list>
-=======
-<<<<<<< Updated upstream
-    <list default="true" id="6f26dba4-4417-401b-a6c0-9375492b1f29" name="Changes" comment="" />
-=======
-    <list default="true" id="6f26dba4-4417-401b-a6c0-9375492b1f29" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/untitled/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Ltweb-DoAn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ltweb-DoAn.iml" afterDir="false" />
+    <list default="true" id="8b96a591-523b-42c7-93c1-30643e95c55a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webpj/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webpj/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webpj/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webpj/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LtWeb/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webpj/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LtWeb/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webpj/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LtWeb/src/main/webapp/index.jsp" afterDir="false" />
     </list>
->>>>>>> Stashed changes
->>>>>>> b8ee5a26370d39b52ce19b05ba3d66a5835d468f
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +26,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,40 +48,34 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2XzEpkZ4iOEPum1Mwhp2ZQanm0a" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-<<<<<<< HEAD
-    "git-widget-placeholder": "main",
-=======
-<<<<<<< Updated upstream
-=======
-    "git-widget-placeholder": "Long",
->>>>>>> Stashed changes
->>>>>>> b8ee5a26370d39b52ce19b05ba3d66a5835d468f
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "last_opened_file_path": "D:/LtW1/Do-An/Ltweb-DoAn",
+    "Tomcat Server.Tomcat.executor": "Run",
+    "git-widget-placeholder": "nhquy",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/HP/Desktop/Ltweb-DoAn",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-<<<<<<< HEAD
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
-=======
-<<<<<<< Updated upstream
-=======
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
->>>>>>> Stashed changes
->>>>>>> b8ee5a26370d39b52ce19b05ba3d66a5835d468f
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -183,6 +168,13 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -196,20 +188,17 @@
       <workItem from="1699768364198" duration="189000" />
       <workItem from="1699771472136" duration="369000" />
       <workItem from="1699831827055" duration="1085000" />
-<<<<<<< HEAD
       <workItem from="1703063444207" duration="146000" />
-=======
-<<<<<<< Updated upstream
-=======
       <workItem from="1703063444207" duration="1807000" />
       <workItem from="1703074738949" duration="753000" />
       <workItem from="1703685940215" duration="225000" />
->>>>>>> Stashed changes
->>>>>>> b8ee5a26370d39b52ce19b05ba3d66a5835d468f
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
