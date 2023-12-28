@@ -6,17 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-<<<<<<< HEAD
-        <module name="Webpj" />
-      </profile>
-    </annotationProcessing>
-=======
-        <module name="untitled" />
+        <module name="LtWeb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Webpj" target="1.7" />
+      <module name="untitled" target="1.8" />
     </bytecodeTargetLevel>
->>>>>>> b8ee5a26370d39b52ce19b05ba3d66a5835d468f
   </component>
 </project>

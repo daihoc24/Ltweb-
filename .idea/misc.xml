@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> b8ee5a26370d39b52ce19b05ba3d66a5835d468f
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/main/pom.xml" />
-<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/LtWeb/pom.xml" />
       </list>
     </option>
   </component>
-=======
-        <option value="$PROJECT_DIR$/untitled/pom.xml" />
-      </list>
-    </option>
-  </component>
->>>>>>> Stashed changes
->>>>>>> b8ee5a26370d39b52ce19b05ba3d66a5835d468f
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
